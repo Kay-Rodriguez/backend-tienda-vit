@@ -28,6 +28,13 @@ Este proyecto implementa el backend para la aplicación **Tienda VIT**, desarrol
 ### 🛒 HU-005 — Gestión de Catálogo de Productos
 - Crear, listar, actualizar y eliminar productos
 - Controlar consistencia ante ventas simultáneas
+  
+- Gestión de Productos e Imágenes
+Este módulo permite crear, actualizar, eliminar y listar productos desde el panel de administración.
+Cada producto puede contener una o varias imágenes, las cuales se almacenan en Supabase Storage mediante peticiones multipart/form-data.
+
+Seguridad:
+Todas las rutas están protegidas con autenticación JWT y middleware requireAdmin, garantizando que solo los usuarios con rol administrador puedan realizar estas operacione
 
 ## ⚙️ Tecnologías Utilizadas
 - Node.js + Express
